@@ -1,0 +1,77 @@
+.dropdown {
+  z-index: 20;
+}
+
+.open-btn {
+  display: inline-block;
+}
+
+.closed-btn {
+  display: block;
+}
+
+.dropdown:hover .open-btn {
+  display: none;
+}
+
+.dropdown:hover .open-btn {
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropdown-content2 {
+  display: block;
+} */
+
+.dropdown-content li {
+  padding: 12px;
+  /* background-color: #fff; */
+  color: #ffffff;
+  margin-bottom: 1px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.dropdown-content2 li {
+  padding: 12px;
+  /* background-color: #fff; */
+  color: #ffffff;
+  margin-bottom: 1px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.dropdown-content2 li:last-child:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.dropdown-content li:hover {
+  background-color: rgb(151, 71, 255, 0.5);
+  color: #fff;
+}
+
+.dropdown-content2 li:hover {
+  background-color: rgb(151, 71, 255, 0.5);
+  color: #fff;
+}
+
+.dropdown:hover button div {
+  transform: translateY(3px);
+  transition: all ease 1s;
+}
+
+.dropdown button div {
+  transform: rotate(180deg) translateY(-3px);
+  transition: all ease 1s;
+}
