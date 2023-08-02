@@ -10,6 +10,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Kday from "./components/Kday";
 import Intro from "./components/Intro";
 import Service from "./components/Service";
+import HomeEng from "./components/HomeEng";
+import FooterEng from "./components/FooterEng";
 
 function App() {
   const [ln, SetLN] = useState("");
@@ -38,6 +40,7 @@ function App() {
       console.log("EN");
       navigate("/en/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // useEffect(() => {
@@ -90,6 +93,16 @@ function App() {
         />
         <Route
           path="/en/"
+          element={
+            <>
+              <NavEN />
+              <HomeEng />
+              <FooterEng />
+            </>
+          }
+        />
+        <Route
+          path="/en/kday"
           element={
             <>
               <NavEN />
