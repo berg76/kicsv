@@ -7,7 +7,7 @@ import icon3 from "../imgs/icon_company.png";
 function FooterEng() {
   return (
     <div className="w-full bg-gradient-to-b from-[#B2E4DE] to-[#064D43b3] pb-16">
-      <div className="relative w-[95%] top-8 mx-auto by-5  bg-white/30 border-2 border-gray-300 backdrop-blur border-opacity-40 rounded-xl drop-shadow-xl shadow-black">
+      <div className="relative w-[95%] top-8 mx-auto py-5  bg-white/30 border-2 border-gray-300 backdrop-blur border-opacity-40 rounded-xl drop-shadow-xl shadow-black">
         <div className="text-white text-[32px] text-center font-Montserrat font-bold">
           Contact Us
         </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -6,7 +6,7 @@ import JumboHeading from "./components/JumboHeading";
 import IntroPro from "./components/IntroProg";
 import Footer from "./components/Footer";
 import NavEN from "./components/NavEN";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // , useNavigate
 import Kday from "./components/Kday";
 import Intro from "./components/Intro";
 import Service from "./components/Service";
@@ -14,34 +14,34 @@ import HomeEng from "./components/HomeEng";
 import FooterEng from "./components/FooterEng";
 
 function App() {
-  const [ln, SetLN] = useState("");
-  const navigate = useNavigate();
+  // const [ln, SetLN] = useState("");
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    async function getLocation() {
-      fetch("http://ip-api.com/json/")
-        .then((response) => response.json())
-        .then((res) => {
-          if (res.countryCode === "KR") {
-            SetLN("KR");
-            console.log(res.countryCode);
-          } else {
-            SetLN("EN");
-          }
-        })
-        .catch((error) => console.log(error));
-    }
-    ln === "" && getLocation();
-    console.log("GET");
-    if (ln === "KR") {
-      console.log("KR");
-      navigate("/");
-    } else if (ln === "EN") {
-      console.log("EN");
-      navigate("/en/");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   async function getLocation() {
+  //     fetch("http://ip-api.com/json/")
+  //       .then((response) => response.json())
+  //       .then((res) => {
+  //         if (res.countryCode === "KR") {
+  //           SetLN("KR");
+  //           console.log(res.countryCode);
+  //         } else {
+  //           SetLN("EN");
+  //         }
+  //       })
+  //       .catch((error) => console.log(error));
+  //   }
+  //   ln === "" && getLocation();
+  //   console.log("GET");
+  //   if (ln === "KR") {
+  //     console.log("KR");
+  //     navigate("/");
+  //   } else if (ln === "EN") {
+  //     console.log("EN");
+  //     navigate("/en/");
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   // useEffect(() => {
   //   if (ln === "KR") {
@@ -53,9 +53,9 @@ function App() {
   //   }
   // }, [ln, navigate]);
 
-  if (ln === "") {
-    return <></>;
-  }
+  // if (ln === "") {
+  //   return <></>;
+  // }
 
   return (
     <div className="App">

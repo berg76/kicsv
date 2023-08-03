@@ -60,22 +60,22 @@ function HomeEng() {
           <span className="underline underline-offset-2">these industries</span>
         </div>
         <div className="grid grid-cols-3 gap-8 py-10 text-center">
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Artificial Intelligence
           </div>
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Metaverse
           </div>
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Digital Health
           </div>
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Mobility
           </div>
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Robotics
           </div>
-          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre">
+          <div className="w-3/4 p-3 mx-auto text-xl text-center text-white border-2 font-AbhayaLibre hover:text-[#9747FF] hover:bg-white hover:border-[#9747ff]">
             Enterprise Solution
           </div>
         </div>

@@ -25,12 +25,19 @@ function NavEN() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-4 flex items-center bg-[#020126] font-IstokWeb z-10 border-soild border-b-2 h-[68px]">
-      <div className="flex items-center justify-between w-full lg:container lg:mx-auto">
-        <div className="text-3xl font-bold leading-none">
-          <img src={logo} alt="" className="w-[125px]" />
+    <nav className="fixed top-0 w-full px-4 bg-[#020126] font-IstokWeb z-10 border-soild border-b-2 h-[68px]">
+      <div className="flex items-center w-full lg:container lg:mx-auto">
+        <div className="absolute top-[16px] inline-block md:relative left-5 md:top-0">
+          <img
+            src={logo}
+            alt=""
+            className="w-[125px] cursor-pointer"
+            onClick={() => {
+              navigate("/en/");
+            }}
+          />
         </div>
-        <div className="md:hidden cursor-pointer py-[22px] px-[20px] relative inline-block  text-white w-[200px] text-right dropdown">
+        <div className="md:hidden cursor-pointer top-[16px] px-[20px] absolute  right-0 inline-block text-white w-[200px] text-right dropdown">
           <div
             className="w-[30px] h-[30px] inline-block"
             style={{
@@ -66,12 +73,11 @@ function NavEN() {
             <li>OIC</li>
           </ul>
         </div> */}
-
         {/*  */}
         <div className="hidden cursor-pointer py-[22px] px-[20px] relative md:inline-block md:ml-[30px] text-white w-[200px] text-left dropdown">
           <button className="text-left">
             PARTNERSHIP &nbsp;
-            <div className="absolute inline-block">
+            <div className="relative inline-block">
               <img src={arrow} alt="" width="14px" height="14px" />
             </div>
           </button>
@@ -81,6 +87,24 @@ function NavEN() {
             <li>INVESTOR</li>
             <li>OIC</li>
           </ul>
+        </div>
+        <div className="hidden mx-auto md:inline-block">
+          <div
+            className="inline-block text-white w-[100px] cursor-pointer p-3 text-center"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            ABOUT
+          </div>
+          <div
+            className="inline-block text-white w-[100px] cursor-pointer p-3 text-center"
+            onClick={() => {
+              navigate("/en/kday");
+            }}
+          >
+            K-DAY
+          </div>
         </div>
         <div className="hidden md:inline-block md:ml-auto md:mr-3">
           <button
