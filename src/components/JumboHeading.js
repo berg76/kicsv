@@ -20,7 +20,7 @@ export default function JumboHeading() {
   });
 
   return (
-    <div className="relative w-full h-[500px] md:h-[550px] overflow-hidden text-center mt-[88px]">
+    <div className="relative w-full h-[500px] md:h-[550px] overflow-hidden text-center mt-[68px]">
       <div
         className={`absolute transition-opacity duration-700 ease-in w-full ${
           bgIdx === 0 ? "opacity-100" : "opacity-0"

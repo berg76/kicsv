@@ -7,9 +7,9 @@ export default function NavBar() {
   const navigate = useNavigate();
   return (
     <div className="fixed top-0 left-0 z-20 w-full bg-white">
-      <nav className="container flex items-center px-4 mx-auto place-content-between">
+      <nav className="container flex items-center px-4 mx-auto place-content-between h-[68px]">
         <Link href="/">
-          <img src={logo} className="w-[160px] py-[20px]" alt="" />
+          <img src={logo} className="w-[125px] ml-5" alt="" />
         </Link>
 
         <ul className="hidden lg:visible list-none lg:flex items-center text-center w-[600px] place-content-between">

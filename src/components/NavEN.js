@@ -26,7 +26,7 @@ function NavEN() {
 
   return (
     <nav className="fixed top-0 w-full px-4 bg-[#020126] font-IstokWeb z-10 border-soild border-b-2 h-[68px]">
-      <div className="flex items-center w-full lg:container lg:mx-auto">
+      <div className="flex items-center w-full mx-auto xl:container">
         <div className="absolute top-[16px] inline-block md:relative left-5 md:top-0">
           <img
             src={logo}
@@ -84,15 +84,21 @@ function NavEN() {
           <ul className="hidden absolute z-20 text-left left-[5px] top-[52px] dropdown-content">
             <div className="h-[20px]"></div>
             <li>ACCELERATRATOR</li>
-            <li>INVESTOR</li>
+            <li
+              onClick={() => {
+                navigate("/en/investor");
+              }}
+            >
+              INVESTOR
+            </li>
             <li>OIC</li>
           </ul>
         </div>
-        <div className="hidden mx-auto md:inline-block">
+        <div className="hidden mx-auto text-center md:inline-block grow">
           <div
             className="inline-block text-white w-[100px] cursor-pointer p-3 text-center"
             onClick={() => {
-              navigate("/about");
+              navigate("/en/about");
             }}
           >
             ABOUT
