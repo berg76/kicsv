@@ -1,8 +1,27 @@
 import React from "react";
-import img1 from "../imgs/KDAY_D_Health.png";
-import img2 from "../imgs/KDAY_AI.png";
-import img3 from "../imgs/KDAY_META.png";
-import img4 from "../imgs/KDAY_SaaS.png";
+// import img1 from "../imgs/KDAY_D_Health.png";
+// import img2 from "../imgs/KDAY_AI.png";
+// import img3 from "../imgs/KDAY_META.png";
+// import img4 from "../imgs/KDAY_SaaS.png";
+
+import kday1 from "../imgs/KDAY_Head.svg";
+import kday21 from "../imgs/KDAY_Head2.svg";
+import kday22 from "../imgs/KDAY_Contents2.svg";
+
+import kday31 from "../imgs/KDAY_KEY1.svg";
+import kday32 from "../imgs/KDAY_KEY2.png";
+import kday33 from "../imgs/KDAY_KEY3.svg";
+
+import kday41 from "../imgs/KDAY_Vertical1.svg";
+import kday42 from "../imgs/KDAY_Vertical2.svg";
+import kday43 from "../imgs/KDAY_Vertical3.png";
+import kday44 from "../imgs/KDAY_Vertical4.svg";
+import kday45 from "../imgs/KDAY_Vertical5.svg";
+import kday46 from "../imgs/KDAY_Vertical6.png";
+import kday47 from "../imgs/KDAY_Vertical7.png";
+import kday48 from "../imgs/KDAY_Vertical8.svg";
+import kday49 from "../imgs/KDAY_Vertical9.svg";
+import kday410 from "../imgs/KDAY_Vertical10.png";
 
 import pLogo1 from "../imgs/P01_Apple.png";
 import pLogo2 from "../imgs/P02_Eleutherai2.png";
@@ -39,146 +58,73 @@ function Kday() {
   return (
     <div className="w-full">
       {/* SECTION 1 */}
-      <div className="bg-[#020126] pt-[170px] pb-[90px] font-AbhayaLibre grid grid-cols-12">
-        <div className="col-span-12 text-center text-white xl:pr-10 xl:text-right xl:col-span-5 ">
-          <div className="text-[6rem] sm:text-[10rem] xl:text-[10rem] text-[#94EEE3]">
-            K-Day :
-          </div>
-          <div
-            className="relative  font-AbhayaLibre
-                      top-[-2rem] xl:top-[-4.5rem] 
-                      text-[2rem] xl:text-[1.9rem] 
-                      xl:right-[9.7rem]"
-          >
-            2023 September 14 - 15<sup>th</sup>{" "}
-          </div>
-        </div>
-        <div className="text-white text-center text-[1.5rem] md:text-[2rem] lg:text-[3rem] pt-[4px] md:pt-[32px] xl:pt-[56px] 2xl:pt-[42px] xl:text-left xl:text-[3.2rem] 2xl:text-[4rem] xl:pl-[8px] col-span-12 xl:col-span-7 font-AbhayaLibre">
-          {/* <div>Silicon Valley’s premier</div>
-          <div className="relative top-[-0.5rem] md:top-[-1rem]">
-            Korean American startup festival
-          </div> */}
-          <div>Discover the Korean Startups</div>
-          <div className="relative top-[-0.5rem] md:top-[-1rem]">
-            Shaping the Future
-          </div>
+      <div className="bg-[#CADAE4] py-[40px] lg:py-[90px] mt-[68px]">
+        <div className="mx-auto lg:container">
+          <img src={kday1} alt="" className="w-[80%] mx-auto" />
         </div>
       </div>
       {/* SECTION 2 - An Extraordinary Opportunity */}
-      <div className="bg-[#DEEDEB] w-full">
+      <div className="bg-[#DEEDEB] ">
         <div className="mx-auto lg:container">
-          <div className="font-AbhayaLibre font-bold text-[24px] md:text-[5rem] text-center md:pt-[12rem] md:py-[6rem] py-[3rem] leading-none">
-            An Extraordinary Opportunity
-          </div>
-          <div className="hidden md:block font-Almarai font-light px-8 md:text-[2rem] break-keep pb-[3rem] md:pb-[10rem] text-center">
-            for startups to formulate ground breaking ideas and connect with
-            potential partners and investors. In collaboration with Bay Area
-            K-Group, Korean Investment Corporation, K-Day brings together a
-            powerhouse of industry leaders and investors from around the globe
-          </div>
-          <div className="md:hidden font-Almarai px-8 text-[14px] break-keep pb-[3rem] text-center">
-            for startups to formulate ground breaking ideas and connect with
-            potential partners and investors from all around the globe
+          <img
+            src={kday21}
+            alt=""
+            className="w-[80%] mx-auto py-[52px] lg:py-[90px]"
+          />
+          <img
+            src={kday22}
+            alt=""
+            className="w-[80%] mx-auto pb-[52px] lg:pb-[90px]"
+          />
+        </div>
+      </div>
+      {/* SECTION 3 - Keynote  */}
+      <div className="bg-[#F3EBD5] ">
+        <div className="mx-auto lg:container">
+          <img
+            src={kday31}
+            alt=""
+            className="w-[57%] mx-auto py-[52px] lg:py-[90px]"
+          />
+          <div className="grid grid-cols-12 pb-24">
+            <div className="col-span-4 place-self-center">
+              <img src={kday32} alt="" className="w-[65%] " />
+            </div>
+            <div className="col-span-8">
+              <img src={kday33} alt="" className="ml-0" />
+            </div>
           </div>
         </div>
       </div>
       {/* SECTION 3 - Industry Forums Empowering  */}
-      <div className="bg-[#73A4B4] w-full">
-        <div className="font-AbhayaLibre font-bold text-white text-[24px] md:text-[5rem] text-center md:pt-[12rem] md:py-[6rem] py-[3rem] leading-none">
-          Industry Forums Empowering <br className="lg:hidden" />
-          Startups in Key Verticals
-        </div>
-        <div className="hidden md:block lg:container lg:mx-auto font-Almarai text-center text-[1.25rem] md:text-[2rem] text-white font-light pb-0 md:pb-[1rem] leading-normal px-[1rem] md:px-[3rem]">
-          providing startups with industry specific discussions, coaching, and
-          networking opportunities
-        </div>
-        {/* IMG + TEXT - 1 */}
-        <div className="w-full p-5">
-          <div className="lg:container lg:mx-auto grid grid-cols-12 place-items-center py-6 md:py-[3rem] lg:px-[2rem]">
-            <div className="col-span-4 p-2 md:p-8">
-              <img src={img1} alt="" className="object-cover" />
-            </div>
-            <div className="col-span-8 px-[1rem] md:px-[2rem] xl:px-[3rem]">
-              <div className="font-AbhayaLibre text-left  md:pt-0 text-[1.5rem] md:text-[3rem] xl:text-[4rem] text-white xl:pb-[2rem] pb-[0.5rem]">
-                Digital Health
-              </div>
-              <div className="hidden md:block font-Almarai text-left text-[1.5rem] xl:text-[2.125rem] text-white font-light leading-7 lg:leading-9 lg:pr-[24px]">
-                innovation is transforming the healthcare landscape, helping
-                providers make better decisions and reducing costs.
-              </div>
-              <div className="md:hidden font-Almarai text-left text-[16px] text-white font-light leading-tight">
-                is making healthcare more accessible and reliable for all
-              </div>
-            </div>
+      <div className="w-full ">
+        <div className="mx-auto bg-white lg:container">
+          <img
+            src={kday41}
+            alt=""
+            className="w-[80%] mx-auto py-[52px] lg:py-[90px]"
+          />
+          <img
+            src={kday42}
+            alt=""
+            className="w-[80%] mx-auto pb-[52px] lg:pb-[90px]"
+          />
+          {/* Digital Health */}
+          <div className="grid grid-cols-2">
+            <img src={kday43} alt="" className="w-full" />
+            <img src={kday44} alt="" className="pl-8 pt-[15%]" />
+            <img src={kday45} alt="" className="pl-8 pt-[15%]" />
+            <img src={kday46} alt="" className="w-full" />
+            <img src={kday47} alt="" className="w-full" />
+            <img src={kday48} alt="" className="pl-8 pt-[15%]" />
+            <img src={kday49} alt="" className="pl-8 pt-[15%]" />
+            <img src={kday410} alt="" className="w-full" />
           </div>
         </div>
-        {/* TEXT + IMG - 2 */}
-        <div className="w-full p-5">
-          <div className="lg:container lg:mx-auto grid grid-cols-12 place-items-center py-6 md:py-[3rem] lg:px-[2rem]">
-            <div className="col-span-8 px-[1rem] md:px-[2rem] xl:px-[3rem]">
-              <div className="font-AbhayaLibre text-left  md:pt-0 text-[1.5rem] md:text-[3rem] xl:text-[4rem] text-white xl:pb-[2rem] pb-[0.5rem]">
-                AI
-              </div>
-              <div className="hidden md:block font-Almarai text-left text-[1.5rem] xl:text-[2.125rem] text-white font-light leading-7 lg:leading-9 lg:pr-[24px]">
-                is shaping our future, automating complex tasks and driving
-                advancements in all industries, making it a powerful tool that
-                can transform the way we live and work.
-              </div>
-              <div className="md:hidden font-Almarai text-left text-[16px] text-white font-light leading-tight">
-                is changing our technological interaction, transcending physical
-                limitations
-              </div>
-            </div>
-            <div className="col-span-4 p-2 md:p-8">
-              <img src={img2} alt="" className="object-cover" />
-            </div>
-          </div>
-        </div>
-        {/* IMG + TEXT - 3 */}
-        <div className="w-full p-5">
-          <div className="lg:container lg:mx-auto grid grid-cols-12 place-items-center py-6 md:py-[3rem] lg:px-[2rem]">
-            <div className="col-span-4 p-2 md:p-8">
-              <img src={img3} alt="" className="object-cover" />
-            </div>
-            <div className="col-span-8 px-[1rem] md:px-[2rem] xl:px-[3rem]">
-              <div className="font-AbhayaLibre text-left  md:pt-0 text-[1.5rem] md:text-[3rem] xl:text-[4rem] text-white xl:pb-[2rem] pb-[0.5rem]">
-                Metaverse
-              </div>
-              <div className="hidden md:block font-Almarai text-left text-[1.5rem] xl:text-[2.125rem] text-white font-light leading-7 lg:leading-9 lg:pr-[24px]">
-                is reshaping our technological interaction, offering immersive
-                and interactive experiences that transcend physical limitations,
-                enabling individuals to explore new dimensions of life.
-              </div>
-              <div className="md:hidden font-Almarai text-left text-[16px] text-white font-light leading-tight">
-                is changing our technological interaction, transcending physical
-                limitations
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* TEXT + IMG - 4 */}
-        <div className="w-full p-5">
-          <div className="lg:container lg:mx-auto grid grid-cols-12 place-items-center py-6 md:py-[3rem] lg:px-[2rem]">
-            <div className="col-span-8 px-[1rem] md:px-[2rem] xl:px-[3rem]">
-              <div className="font-AbhayaLibre text-left  md:pt-0 text-[1.5rem] md:text-[3rem] xl:text-[4rem] text-white xl:pb-[2rem] pb-[0.5rem]">
-                Enterprise Solution (SaaS)
-              </div>
-              <div className="hidden md:block font-Almarai text-left text-[1.5rem] xl:text-[2.125rem] text-white font-light leading-7 lg:leading-9 lg:pr-[24px]">
-                is gaining popularity in the business world, offering innovative
-                solutions and driving efficiency in the corporate landscape.
-              </div>
-              <div className="md:hidden font-Almarai text-left text-[16px] text-white font-light leading-tight">
-                is revolutionizing businesses, driving efficiency in the
-                corporate landscape.
-              </div>
-            </div>
-            <div className="col-span-4 p-2 md:p-8">
-              <img src={img4} alt="" className="object-cover" />
-            </div>
-          </div>
-        </div>
+
         <div className="h-[2rem] md:h-[10rem]"></div>
       </div>
+
       {/* SECTION 4 - Be a part of K-Day */}
       <div className="bg-[#020126] w-full">
         <div className="px-8 lg:container lg:mx-auto lg:px-[2rem] py-8 lg:py-[6rem] ">

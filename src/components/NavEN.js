@@ -81,7 +81,7 @@ function NavEN() {
               <img src={arrow} alt="" width="14px" height="14px" />
             </div>
           </button>
-          <ul className="hidden absolute z-20 text-left left-[5px] top-[52px] dropdown-content">
+          <ul className="hidden absolute z-50 text-left left-[5px] top-[52px] dropdown-content">
             <div className="h-[20px]"></div>
             <li>ACCELERATRATOR</li>
             <li

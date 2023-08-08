@@ -3,6 +3,7 @@ import icon1 from "../imgs/s_desk.png";
 import icon2 from "../imgs/s_company.png";
 import icon3 from "../imgs/s_location-pin.png";
 import icon4 from "../imgs/s_work-process.png";
+import bullet1 from "../imgs/bullet1.png";
 
 function Service() {
   return (
@@ -59,15 +60,50 @@ function Service() {
             </li>
             <li className="grid grid-cols-12 py-2 place-items-center">
               <div className="col-span-3 text-lg ">지원내용</div>
+
               <div className="w-full col-span-9 pl-4 text-lg leading-loose text-left border-l-2 border-gray-500">
-                코워킹스페이스 무료 제공 미국 법인 설립 시 센터 주소 무료 사용
+                {/* <ul className={`list-image-[url${bullet1}`}> */}
+                {/* <ul className="list-image-store"> */}
+                <ul>
+                  {/* <ul style={{ listStyleImage: "url('/imgs/bullet1.png')" }}> */}
+                  <li>
+                    <img
+                      src={bullet1}
+                      alt=""
+                      className="w-[20px] inline-block relative -top-[2px]"
+                    />
+                    <span>
+                      코워킹스페이스 무료 제공 미국 법인 설립 시 센터 주소 무료
+                      사용
+                    </span>
+                  </li>
+                  <li>
+                    제공 센터로 도착하는 우편물 관리 무료 제공용 네트워킹 마케팅
+                  </li>
+
+                  <li></li>
+                </ul>
+                <div className="relative w-full">
+                  <img
+                    src={bullet1}
+                    alt=""
+                    className="w-[20px] absolute top-[2px]"
+                  />
+
+                  <div className="ml-[22px] leading-normal ">
+                    지원 무료 제공 미국 법인 설립비용 지원(기업당 최대 $1,000
+                    (USD) 한도 지원 (선착순, 해당 예산 소진까지) <br />※ 카본
+                    멤버십 중 우수 기업은 다이아몬드 프로그램을 통해 추가로
+                    지원을 합니다
+                  </div>
+                </div>
+                {/* 코워킹스페이스 무료 제공 미국 법인 설립 시 센터 주소 무료 사용
                 <br />
                 제공 센터로 도착하는 우편물 관리 무료 제공용 네트워킹 마케팅
                 <br />
                 지원 무료 제공 미국 법인 설립비용 지원(기업당 최대 $1,000 (USD)
-                한도 지원 (선착순, 해당 예산 소진까지) <br />
-                ※카본 멤버십 중 우수 기업은 다이아몬드 프로그램을 통해 추가로
-                지원을 합니다
+                한도 지원 (선착순, 해당 예산 소진까지) <br />※ 카본 멤버십 중
+                우수 기업은 다이아몬드 프로그램을 통해 추가로 지원을 합니다 */}
               </div>
             </li>
             <li>3</li>

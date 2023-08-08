@@ -9,11 +9,30 @@ import emf from "../imgs/about_EMF.svg";
 import pmf from "../imgs/about_PMF.svg";
 import gmf from "../imgs/about_GMF.svg";
 
+import iconClose from "../imgs/icons_close.svg";
+import btnLearn from "../imgs/btn_LearnMore.svg";
+
 import emfPopupTitle from "../imgs/about_EMF_popup_title.svg";
 import emfPopupContents from "../imgs/about_EMF_popup_contents.svg";
 
+import pmfPopupTitle from "../imgs/about_PMF_popup_title.svg";
+import pmfPopupContents from "../imgs/about_PMF_popup_contents.svg";
+
+import gmfPopupTitle from "../imgs/about_GMF_popup_title.svg";
+import gmfPopupContents from "../imgs/about_GMF_popup_contents.svg";
+
+import discoveryTitle from "../imgs/about_discovery_title.svg";
+import discoveryHeading from "../imgs/about_discovery_heading.svg";
+import kday from "../imgs/about_discovery_kday.svg";
+import kdayDetails from "../imgs/about_discovery_kday_details.svg";
+import deepConnect from "../imgs/about_discovery_deepconnect.svg";
+import deepConnectDetails from "../imgs/about_discovery_deepconnect_details.svg";
+
 function AboutEN() {
+  const baseInfo = useRef();
   const emfInfo = useRef();
+  const pmfInfo = useRef();
+  const gmfInfo = useRef();
 
   return (
     <>
@@ -46,83 +65,204 @@ function AboutEN() {
             />
           </div>
         </div>
-      </div>
-      <div className="bg-[#F8F6F3] w-full h-[700px]">
-        <div className="relative h-full lg:container">
-          <div className="w-[70%] h-full inline-block  relative">
-            <img
-              src={slide0}
-              alt=""
-              className="w-[90%] left-[5%] top-[30%] relative "
-            />
-            {/* EMF POPUP */}
-            <div
-              className="absolute h-[90%] w-[90%] left-[5%] top-[5%] bg-white rounded-2xl p-5 transition ease-in-out duration-500 opacity-0" //invisible
-              ref={emfInfo}
-            >
-              <div className="w-[520px] h-[12px] bg-[#9EFBB2] absolute top-[23%]"></div>
-              <div className="w-[320px] h-[12px] bg-[#9EFBB2] absolute top-[35%]"></div>
+
+        <div className="bg-[#F8F6F3] w-full h-[700px] xl:h-[1000px] relative">
+          <div className="absolute right-0 bg-[#094038] w-[30%] top-0 h-full"></div>
+          <div className="relative h-full mx-auto lg:container">
+            <div className="w-[70%] h-full inline-block relative">
               <img
-                src={emfPopupTitle}
+                src={slide0}
                 alt=""
-                className="w-[80%] relative top-[20%]"
+                className="w-[90%] left-[5%] top-[30%] relative"
+                ref={baseInfo}
+              />
+              {/* EMF POPUP */}
+              <div
+                className="absolute h-[90%] w-[90%] left-[5%] top-[5%] bg-white rounded-2xl p-5 transition ease-in-out duration-500 opacity-0" //invisible
+                ref={emfInfo}
+              >
+                <img
+                  src={emfPopupTitle}
+                  alt=""
+                  className="w-[80%] relative top-[20%]"
+                />
+                <img
+                  src={emfPopupContents}
+                  alt=""
+                  className="w-[90%] relative top-[30%]"
+                />
+                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                  LEARN MORE
+                </button>
+                <img
+                  src={iconClose}
+                  alt=""
+                  className="absolute z-20 cursor-pointer top-5 right-5"
+                  onClick={() => {
+                    emfInfo.current.style.opacity = 0.0;
+                    baseInfo.current.style.opacity = 1.0;
+                  }}
+                />
+              </div>
+              {/* PMF POPUP */}
+              <div
+                className="absolute h-[90%] w-[90%] left-[5%] top-[5%] bg-white rounded-2xl p-5 transition ease-in-out duration-500 opacity-0" //invisible
+                ref={pmfInfo}
+              >
+                <img
+                  src={pmfPopupTitle}
+                  alt=""
+                  className="w-[62%] relative top-[20%]"
+                />
+                <img
+                  src={pmfPopupContents}
+                  alt=""
+                  className="w-[90%] relative top-[30%]"
+                />
+                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                  LEARN MORE
+                </button>
+                <img
+                  src={iconClose}
+                  alt=""
+                  className="absolute z-20 cursor-pointer top-5 right-5"
+                  onClick={() => {
+                    // emfInfo.current.style.visibility = "hidden";
+                    pmfInfo.current.style.opacity = 0.0;
+                    baseInfo.current.style.opacity = 1.0;
+                  }}
+                />
+              </div>
+              {/* GMF POPUP */}
+              <div
+                className="absolute h-[90%] w-[90%] left-[5%] top-[5%] bg-white rounded-2xl p-5 transition ease-in-out duration-500 opacity-0" //invisible
+                ref={gmfInfo}
+              >
+                <img
+                  src={gmfPopupTitle}
+                  alt=""
+                  className="w-[50%] relative top-[20%]"
+                />
+                <img
+                  src={gmfPopupContents}
+                  alt=""
+                  className="w-[90%] relative top-[30%]"
+                />
+                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                  LEARN MORE
+                </button>
+                <img
+                  src={iconClose}
+                  alt=""
+                  className="absolute z-20 cursor-pointer top-5 right-5 "
+                  onClick={() => {
+                    gmfInfo.current.style.opacity = 0.0;
+                    baseInfo.current.style.opacity = 1.0;
+                  }}
+                />
+              </div>
+            </div>
+            <div className="w-[10%] bg-[#C8A79D] h-full relative inline-block">
+              <img
+                src={emf}
+                alt=""
+                className="w-[50%] absolute bottom-[160px] left-[25%]"
               />
               <img
-                src={emfPopupContents}
+                src={leftArrow}
                 alt=""
-                className="w-[90%] relative top-[30%]"
+                className="w-[50%] absolute bottom-[40px] left-[25%] cursor-pointer"
+                onClick={() => {
+                  emfInfo.current.style.opacity = 1.0;
+                  pmfInfo.current.style.opacity = 0.0;
+                  gmfInfo.current.style.opacity = 0.0;
+                  baseInfo.current.style.opacity = 0.0;
+                }}
               />
-              <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
-                LEARN MORE
-              </button>
+            </div>
+            <div className="w-[10%] bg-[#A871EF] h-full relative inline-block">
+              <img
+                src={pmf}
+                alt=""
+                className="w-[50%] absolute bottom-[160px] left-[25%]"
+              />
+              <img
+                src={leftArrow}
+                alt=""
+                className="w-[50%] absolute bottom-[40px] left-[25%]"
+                onClick={() => {
+                  emfInfo.current.style.opacity = 0.0;
+                  pmfInfo.current.style.opacity = 1.0;
+                  gmfInfo.current.style.opacity = 0.0;
+                  baseInfo.current.style.opacity = 0.0;
+                }}
+              />
+            </div>
+            <div className="w-[10%] bg-[#094038] h-full relative inline-block">
+              <img
+                src={gmf}
+                alt=""
+                className="w-[50%] absolute bottom-[160px] left-[25%]"
+              />
+              <img
+                src={leftArrow}
+                alt=""
+                className="w-[50%] absolute bottom-[40px] left-[25%]"
+                onClick={() => {
+                  emfInfo.current.style.opacity = 0.0;
+                  pmfInfo.current.style.opacity = 0.0;
+                  gmfInfo.current.style.opacity = 1.0;
+                  baseInfo.current.style.opacity = 0.0;
+                }}
+              />
             </div>
           </div>
-          <div className="w-[10%] bg-[#C8A79D] h-full relative inline-block">
-            <img
-              src={emf}
-              alt=""
-              className="w-[50%] absolute bottom-[160px] left-[25%]"
-            />
-            <img
-              src={leftArrow}
-              alt=""
-              className="w-[50%] absolute bottom-[40px] left-[25%]"
-              onMouseEnter={() => {
-                // emfInfo.current.style.display = "block";
-                // emfInfo.current.style.visibility = "visible";
-                console.log("IN");
-                emfInfo.current.style.opacity = 1.0;
-              }}
-              onMouseLeave={() => {
-                // emfInfo.current.style.visibility = "hidden";
-                emfInfo.current.style.opacity = 0.0;
-                console.log("OUT");
-              }}
-            />
-          </div>
-          <div className="w-[10%] bg-[#A871EF] h-full relative inline-block">
-            <img
-              src={pmf}
-              alt=""
-              className="w-[50%] absolute bottom-[160px] left-[25%]"
-            />
-            <img
-              src={leftArrow}
-              alt=""
-              className="w-[50%] absolute bottom-[40px] left-[25%]"
-            />
-          </div>
-          <div className="w-[10%] bg-[#094038] h-full relative inline-block">
-            <img
-              src={gmf}
-              alt=""
-              className="w-[50%] absolute bottom-[160px] left-[25%]"
-            />
-            <img
-              src={leftArrow}
-              alt=""
-              className="w-[50%] absolute bottom-[40px] left-[25%]"
-            />
+        </div>
+
+        <div className="bg-[#DEEDEB] w-full relative">
+          <img src={discoveryTitle} alt="" className="pt-24 pb-16 mx-auto" />
+          <img src={discoveryHeading} alt="" className="mx-auto xl:scale-125" />
+
+          <div className="grid grid-cols-2 gap-16 pt-24 pb-24 mx-auto lg:container">
+            {/* KDAY */}
+            <div className="relative bg-black/10 rounded-3xl">
+              <img
+                src={kday}
+                alt=""
+                className="mt-12 mb-12 ml-8 origin-top-left lg:mb-16 lg:ml-16 lg:scale-150"
+              />
+              <img
+                src={kdayDetails}
+                alt=""
+                className="w-[80%] ml-8 mb-28 lg:mb-32"
+              />
+              <img
+                src={btnLearn}
+                alt=""
+                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px]"
+              />
+            </div>
+            {/* DEEP CONNECT */}
+            <div className="relative bg-black/10 rounded-3xl">
+              <img
+                src={deepConnect}
+                alt=""
+                className="mt-12 mb-12 ml-8 origin-top-left lg:mb-16 lg:ml-16 lg:scale-150"
+              />
+              <img
+                src={deepConnectDetails}
+                alt=""
+                className="w-[80%] ml-8 mb-28 lg:mb-32"
+              />
+              {/* <button className="font-Montserrat text-[#9747FF] text-lg absolute bottom-6 right-8 px-5 py-1 bg-white rounded-3xl">
+                Learn more
+              </button> */}
+              <img
+                src={btnLearn}
+                alt=""
+                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px]"
+              />
+            </div>
           </div>
         </div>
       </div>

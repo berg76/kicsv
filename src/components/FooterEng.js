@@ -11,10 +11,10 @@ function FooterEng() {
         <div className="text-white text-[32px] text-center font-Montserrat font-bold">
           Contact Us
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-2">
           <div className="relative m-5">
             <input
-              className="rounded-lg w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
+              className="rounded-full w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
               type="text"
               name="name"
               placeholder="Username"
@@ -27,7 +27,7 @@ function FooterEng() {
           </div>
           <div className="relative m-5">
             <input
-              className="rounded-lg w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
+              className="rounded-full w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
               type="text"
               name="company"
               placeholder="Institution | Company "
@@ -40,7 +40,7 @@ function FooterEng() {
           </div>
           <div className="relative m-5">
             <input
-              className="rounded-lg w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
+              className="rounded-full w-full p-[11px] outline-none font-Montserrat text-light bg-transparent placeholder:text-white text-white border-2 border-white pl-14"
               type="text"
               name="email"
               placeholder="Email"
@@ -53,11 +53,11 @@ function FooterEng() {
           </div>
           <div className="relative col-span-3 mx-5">
             <textarea
-              className="w-full p-[11px] rounded-lg outline-none h-[6.25rem] resize-none font-Montserrat bg-transparent placeholder:text-white text-white border-2 border-white"
+              className="w-full p-[11px] rounded-2xl outline-none h-[6.25rem] resize-none font-Montserrat bg-transparent placeholder:text-white text-white border-2 border-white"
               name="message"
               placeholder="Message"
             ></textarea>
-            <button className="absolute bottom-3 right-3 bg-white px-2 py-1 text-[#73B4AC] rounded-lg">
+            <button className="absolute bottom-3 right-3 bg-white px-2 py-1 mb-1 text-[#73B4AC] rounded-lg">
               Submit
             </button>
           </div>

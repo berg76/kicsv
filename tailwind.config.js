@@ -19,6 +19,9 @@ module.exports = {
         Roboto: ["Roboto"],
         Montserrat: ["Montserrat"],
       },
+      listStyleImage: {
+        store: 'url("/src/imgs/bullet1.png")',
+      },
     },
   },
   plugins: [],
