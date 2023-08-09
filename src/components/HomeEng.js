@@ -4,9 +4,11 @@ import icon1 from "../imgs/landing_icon1.png";
 import icon2 from "../imgs/landing_icon2.png";
 import icon3 from "../imgs/landing_icon3.png";
 
-import landingHead from "../imgs/EnLandingHead.svg";
-import landingSub from "../imgs/EnLandingSubHead.svg";
-import landingImg from "../imgs/EnLandingImg.svg";
+// import landingHead from "../imgs/EnLandingHead.svg";
+// import landingSub from "../imgs/EnLandingSubHead.svg";
+// import landingImg from "../imgs/EnLandingImg.svg";
+// import landingImgEx from "../imgs/EnLandingImg_ex.svg";
+import landingTop from "../imgs/EnLandingTop.svg";
 
 import img1 from "../imgs/EnLandingContentsImg1.png";
 import img2 from "../imgs/EnLandingContentsImg2.png";
@@ -19,18 +21,29 @@ import content2 from "../imgs/EnLandingContents2.svg";
 function HomeEng() {
   return (
     <div>
-      <div className="bg-[#FFDCCD] w-full">
-        <div className="w-full mt-[68px] relative bg-[#FFDCCD] lg:container mx-auto">
-          <img
+      <div className="bg-[#FFDCCD] w-full mt-[68px] py-12">
+        <div className="w-full relative bg-[#FFDCCD] xl:container mx-auto">
+          {/* <img
             src={landingHead}
             alt=""
-            className="pl-16 pt-[72px] pb-[40px] "
+            className="pl-16 pt-[72px] pb-[40px] w-[45%] "
           />
-          <img src={landingSub} alt="" className="pt-8 pb-16 pl-16" />
+          <img src={landingSub} alt="" className="pt-8 pb-16 pl-16 w-[60%]" />
           <img
             src={landingImg}
             alt=""
-            className="absolute top-0 scale-[0.8] right-12 "
+            className="absolute top-5 w-[45%] left-[50%] xl:hidden"
+          />
+          <img
+            src={landingImgEx}
+            alt=""
+            className="hidden xl:inline-block absolute -top-28 scale-[0.9] right-2 "
+          />*/}
+
+          <img
+            src={landingTop}
+            alt=""
+            className="relative w-full left-1 mt-[-55px]"
           />
         </div>
       </div>

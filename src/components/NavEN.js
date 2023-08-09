@@ -25,7 +25,7 @@ function NavEN() {
   }
 
   return (
-    <nav className="fixed top-0 w-full px-4 bg-[#020126] font-IstokWeb z-10 border-soild border-b-2 h-[68px]">
+    <nav className="fixed top-0 w-full px-4 bg-[#020126] font-IstokWeb z-50 border-soild border-b-2 h-[68px]">
       <div className="flex items-center w-full mx-auto xl:container">
         <div className="absolute top-[16px] inline-block md:relative left-5 md:top-0">
           <img
@@ -83,7 +83,13 @@ function NavEN() {
           </button>
           <ul className="hidden absolute z-50 text-left left-[5px] top-[52px] dropdown-content">
             <div className="h-[20px]"></div>
-            <li>ACCELERATRATOR</li>
+            <li
+              onClick={() => {
+                navigate("/en/accelerator");
+              }}
+            >
+              ACCELERATRATOR
+            </li>
             <li
               onClick={() => {
                 navigate("/en/investor");

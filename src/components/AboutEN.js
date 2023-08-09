@@ -1,5 +1,7 @@
 import React from "react";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 import img1 from "../imgs/about1.png";
 import img2 from "../imgs/about2.png";
 
@@ -33,6 +35,8 @@ function AboutEN() {
   const emfInfo = useRef();
   const pmfInfo = useRef();
   const gmfInfo = useRef();
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -239,7 +243,10 @@ function AboutEN() {
               <img
                 src={btnLearn}
                 alt=""
-                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px]"
+                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px] cursor-pointer"
+                onClick={() => {
+                  navigate("/en/kday");
+                }}
               />
             </div>
             {/* DEEP CONNECT */}

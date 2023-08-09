@@ -15,6 +15,7 @@ import HomeEng from "./components/HomeEng";
 import FooterEng from "./components/FooterEng";
 import AboutEN from "./components/AboutEN";
 import InvestorEN from "./components/InvestorEN";
+import AcceleratorEN from "./components/AcceleratorEN";
 
 function App() {
   const [ln, SetLN] = useState("");
@@ -117,6 +118,15 @@ function App() {
               <>
                 <NavEN />
                 <InvestorEN />
+              </>
+            }
+          />
+          <Route
+            path="/en/accelerator"
+            element={
+              <>
+                <NavEN />
+                <AcceleratorEN />
               </>
             }
           />
