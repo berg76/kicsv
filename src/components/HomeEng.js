@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import icon1 from "../imgs/landing_icon1.png";
 import icon2 from "../imgs/landing_icon2.png";
@@ -19,6 +19,49 @@ import content1 from "../imgs/EnLandingContents1.svg";
 import content2 from "../imgs/EnLandingContents2.svg";
 
 function HomeEng() {
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
+  const [num3, setNum3] = useState(0);
+
+  const [timer1, setTimer1] = useState();
+  const [timer2, setTimer2] = useState();
+  const [timer3, setTimer3] = useState();
+
+  useEffect(() => {
+    const interval1 = setInterval(() => {
+      setNum1((p) => p + 1);
+      return () => clearInterval(interval1);
+    }, 30);
+    const interval2 = setInterval(() => {
+      setNum2((p) => p + 1);
+      return () => clearInterval(interval2);
+    }, 250);
+    const interval3 = setInterval(() => {
+      setNum3((p) => p + 1);
+      return () => clearInterval(interval3);
+    }, 60);
+    setTimer1(interval1);
+    setTimer2(interval2);
+    setTimer3(interval3);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (num1 >= 80) {
+      setNum1(80);
+      clearInterval(timer1);
+    }
+    if (num2 >= 12) {
+      setNum2(12);
+      clearInterval(timer2);
+    }
+    if (num3 >= 40) {
+      setNum3(40);
+      clearInterval(timer3);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [num1, num2, num3]);
+
   return (
     <div>
       <div className="bg-[#FFDCCD] w-full mt-[68px] py-12">
@@ -60,7 +103,7 @@ function HomeEng() {
               our programs and events
             </div>
             <div className="text-center text-[#FF4D00] font-Roboto text-[52px] font-bold">
-              10+
+              {num1}+
             </div>
           </div>
           <div className="text-center">
@@ -74,7 +117,7 @@ function HomeEng() {
               programs
             </div>
             <div className="text-center text-[#FF4D00] font-Roboto text-[52px] font-bold">
-              1+
+              {num2}+
             </div>
           </div>
           <div className="text-center">
@@ -87,7 +130,7 @@ function HomeEng() {
               Venture Capital Firms <br /> partnered with us
             </div>
             <div className="text-center text-[#FF4D00] font-Roboto text-[52px] font-bold">
-              10+
+              {num3}+
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ function AboutEN() {
             <div className="relative top-[-15px]">success through</div>
             <div className="relative top-[-30px]">cross-cultural</div>
 
-            <div className="w-[333px] 2xl:w-[500px] h-[12px] bg-[#FEBDF0] absolute bottom-[55px] 2xl:bottom-[65px]"></div>
+            <div className="w-[380px] 2xl:w-[560px] 2xl:h-[40px] h-[25px] -left-[10px] bg-[#FEBDF0] absolute bottom-[55px] 2xl:bottom-[65px]"></div>
             <div className="relative top-[-45px] inline-block">
               collaboration
             </div>
@@ -95,7 +95,12 @@ function AboutEN() {
                   alt=""
                   className="w-[90%] relative top-[30%]"
                 />
-                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                <button
+                  className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white cursor-pointer"
+                  onClick={() => {
+                    navigate("/en/accelerator");
+                  }}
+                >
                   LEARN MORE
                 </button>
                 <img
@@ -123,7 +128,12 @@ function AboutEN() {
                   alt=""
                   className="w-[90%] relative top-[30%]"
                 />
-                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                <button
+                  className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white cursor-pointer"
+                  onClick={() => {
+                    navigate("/en/accelerator");
+                  }}
+                >
                   LEARN MORE
                 </button>
                 <img
@@ -152,7 +162,12 @@ function AboutEN() {
                   alt=""
                   className="w-[90%] relative top-[30%]"
                 />
-                <button className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white">
+                <button
+                  className="absolute px-8 py-3 rounded-full bottom-3 right-3 bg-[#C8A79D] text-white cursor-pointer"
+                  onClick={() => {
+                    navigate("/en/accelerator");
+                  }}
+                >
                   LEARN MORE
                 </button>
                 <img
@@ -267,7 +282,10 @@ function AboutEN() {
               <img
                 src={btnLearn}
                 alt=""
-                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px]"
+                className="absolute px-5 py-3 bg-white bottom-6 right-8 rounded-3xl w-[35%] max-w-[180px] cursor-pointer"
+                onClick={() => {
+                  navigate("/en/investor");
+                }}
               />
             </div>
           </div>

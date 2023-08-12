@@ -88,7 +88,7 @@ function NavEN() {
                 navigate("/en/accelerator");
               }}
             >
-              ACCELERATRATOR
+              ACCELERATOR
             </li>
             <li
               onClick={() => {
@@ -97,7 +97,13 @@ function NavEN() {
             >
               INVESTOR
             </li>
-            <li>OIC</li>
+            <li
+              onClick={() => {
+                navigate("/en/oic");
+              }}
+            >
+              OIC
+            </li>
           </ul>
         </div>
         <div className="hidden mx-auto text-center md:inline-block grow">
@@ -122,7 +128,7 @@ function NavEN() {
           <button
             className="px-3 py-2 mr-2 text-sm font-bold text-gray-900 transition duration-200 bg-gray-400 shrink-0 grow-0 hover:bg-gray-50 rounded-xl"
             onClick={() => {
-              navigate("/");
+              navigate("/main");
             }}
           >
             KR

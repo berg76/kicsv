@@ -6,7 +6,7 @@ import logo from "../imgs/kicsv_logo_bk.png";
 export default function NavBar() {
   const navigate = useNavigate();
   return (
-    <div className="fixed top-0 left-0 z-20 w-full bg-white">
+    <div className="fixed top-0 left-0 z-20 w-full bg-white font-Noto">
       <nav className="container flex items-center px-4 mx-auto place-content-between h-[68px]">
         <Link href="/">
           <img src={logo} className="w-[125px] ml-5" alt="" />
@@ -16,7 +16,7 @@ export default function NavBar() {
           <li
             className="p-2 rounded-lg hover:bg-gray-300"
             onClick={() => {
-              navigate("/");
+              navigate("/main");
             }}
           >
             HOME
@@ -37,9 +37,30 @@ export default function NavBar() {
           >
             서비스
           </li>
-          <li className="p-2 rounded-lg hover:bg-gray-300">프로그램</li>
-          <li className="p-2 rounded-lg hover:bg-gray-300">파트너</li>
-          <li className="p-2 rounded-lg hover:bg-gray-300">출장안내</li>
+          <li
+            className="p-2 rounded-lg hover:bg-gray-300"
+            onClick={() => {
+              navigate("/program/");
+            }}
+          >
+            프로그램
+          </li>
+          <li
+            className="p-2 rounded-lg hover:bg-gray-300"
+            onClick={() => {
+              navigate("/partner/");
+            }}
+          >
+            파트너
+          </li>
+          <li
+            className="p-2 rounded-lg hover:bg-gray-300"
+            onClick={() => {
+              navigate("/info/");
+            }}
+          >
+            출장안내
+          </li>
         </ul>
         <div className="flex items-center justify-end w-[160px]">
           {/* <button className="inline-block text-[#f8fafc] bg-[#1e293b] rounded-lg p-2 text-bold">

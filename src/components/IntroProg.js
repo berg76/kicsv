@@ -10,7 +10,7 @@ import ceo3 from "../imgs/ceo_startrio.jpg";
 
 export default function IntroPro() {
   return (
-    <>
+    <div className="font-Noto">
       <div className="w-full pt-24 pb-12 lg:container lg:mx-auto">
         <div className="text-[1.875rem] text-black md:text-[3rem] text-center ">
           KIC 실리콘밸리 프로그램
@@ -119,7 +119,7 @@ export default function IntroPro() {
               className="w-[130px] h-[130px] object-cover rounded-3xl mt-6 inline-block"
             />
             <div className="h-[2px] bg-gray-300 w-[100%] my-8"></div>
-            <div className="text-base leading-loose">
+            <div className="text-base leading-loose break-keep">
               "미국 시장에서 성장하는데 필요한 정보와 제반 사항들이 홍수와 같이
               많은데, 실질적으로 필요한 사람과 정보를 소개해 주어서 항상 자문을
               많이 구하고 있습니다"
@@ -134,7 +134,7 @@ export default function IntroPro() {
               className="w-[130px] h-[130px] object-cover rounded-3xl mt-6 inline-block"
             />
             <div className="h-[2px] bg-gray-300 w-[100%] my-8"></div>
-            <div className="text-base leading-loose">
+            <div className="text-base leading-loose break-keep">
               "KIC 실리콘밸리에서 사업 초기에 많은 회의를 하면서 밑그림을
               그렸습니다. 초기에 많은 지원을 받았기에 미국 진출하는 후배
               스타트업 여러분께도 추천해 드립니다"
@@ -149,7 +149,7 @@ export default function IntroPro() {
               className="w-[130px] h-[130px] object-cover rounded-3xl mt-6 inline-block"
             />
             <div className="h-[2px] bg-gray-300 w-[100%] my-8"></div>
-            <div className="text-base leading-loose">
+            <div className="text-base leading-loose break-keep">
               "스타트업의 전쟁터 실리콘밸리, KIC는 고군분투하는 한국 및 한국계
               기업들의 어려움을 창업가 입장에서 함께 고민하고 해결책을 제시해
               주는 대한민국의 비밀 무기 입니다."
@@ -157,6 +157,6 @@ export default function IntroPro() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

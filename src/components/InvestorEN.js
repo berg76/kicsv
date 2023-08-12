@@ -22,7 +22,7 @@ function InvestorEN() {
         <div className="font-Montserrat font-semibold text-[53px] 2xl:text-[80px] left-16 relative top-[100px]">
           <div className="">Explore Events</div>
           <div className="relative top-[-15px]">Showcasing</div>
-          <div className="w-[333px] 2xl:w-[550px] h-[12px] 2xl:h-[22px] bg-[#FEBDF0] absolute bottom-[75px] 2xl:bottom-[170px]"></div>
+          <div className="w-[420px] -left-[10px] 2xl:w-[640px] h-[30px] 2xl:h-[35px] bg-[#FEBDF0] absolute bottom-[120px] 2xl:bottom-[170px]"></div>
           <div className="relative top-[-30px]">High-Potential</div>
           <div className="relative top-[-45px] inline-block">Startups</div>
         </div>

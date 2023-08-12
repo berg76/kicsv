@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import logo from "../imgs/kicsv_logo.png";
 import envelope from "../imgs/envelope-o.svg";
 import phone from "../imgs/phone.svg";
@@ -6,9 +8,41 @@ import nipa from "../imgs/nipa_logo.png";
 import mist from "../imgs/msict_logo.png";
 import { Link } from "react-router-dom";
 
+import emailjs from "@emailjs/browser";
+
 export default function Footer() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const contents = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "service_py4k1av",
+        "template_adoutoi",
+        contents,
+        "ktAJwzbLF-tAkp_RQ"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
-    <footer className="bg-[#e5e8eb]">
+    <footer className="bg-[#e5e8eb] font-Noto">
       <div className="container mx-auto">
         <div className="grid grid-cols-12">
           <div className="col-span-12 py-8 mx-auto">
@@ -20,6 +54,7 @@ export default function Footer() {
               className="rounded-lg w-full p-[11px] outline-none"
               type="text"
               name="name"
+              onChange={(e) => setName(e.target.value)}
               placeholder="성함을 입력해주세요"
             />
           </div>
@@ -28,6 +63,7 @@ export default function Footer() {
               className="w-full rounded-lg p-[11px] outline-none"
               type="text"
               name="email"
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="메일 주소를 입력해주세요"
             />
           </div>
@@ -36,11 +72,15 @@ export default function Footer() {
             <textarea
               className="w-full p-[11px] rounded-lg outline-none h-[6.25rem] resize-none"
               name="message"
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="문의사항을 입력해주세요"
             ></textarea>
           </div>
           <div className="col-span-12 py-8 mx-auto ">
-            <button className="py-2 font-bold text-white bg-blue-700 rounded-full px-7 hover:bg-red-700">
+            <button
+              className="py-2 font-bold text-white bg-blue-700 rounded-full px-7 hover:bg-red-700"
+              onClick={sendEmail}
+            >
               전&nbsp;&nbsp;&nbsp;&nbsp;송
             </button>
           </div>
