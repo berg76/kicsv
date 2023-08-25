@@ -566,7 +566,7 @@ function Info() {
               <div className="w-full col-span-8 pl-4 text-lg leading-loose text-left border-l-2 border-gray-500">
                 {data.map((string, i) => {
                   return (
-                    <div className="relative w-full py-1">
+                    <div className="relative w-full py-1" key={i}>
                       <img
                         src={bullet1}
                         alt=""

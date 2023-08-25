@@ -4,7 +4,10 @@ import React from "react";
 // import img3 from "../imgs/KDAY_META.png";
 // import img4 from "../imgs/KDAY_SaaS.png";
 
-import kday1 from "../imgs/KDAY_Head.svg";
+// import kday1 from "../imgs/KDAY_Head.svg";
+import kday1 from "../imgs/KDAY_Head_qr.svg";
+// import qrcode from "../imgs/qrcode.png";
+
 import kday21 from "../imgs/KDAY_Head2.svg";
 import kday22 from "../imgs/KDAY_Contents2.svg";
 
@@ -58,7 +61,7 @@ function Kday() {
   return (
     <div className="w-full">
       {/* SECTION 1 */}
-      <div className="bg-[#CADAE4] py-[40px] lg:py-[90px] mt-[68px]">
+      <div className="bg-[#CADAE4] pt-[40px] pb-[20px] lg:pt-[90px] lg:pb-[40px] mt-[68px] relative">
         <div className="mx-auto lg:container">
           <img src={kday1} alt="" className="w-[80%] mx-auto" />
         </div>

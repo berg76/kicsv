@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div className="fixed top-0 left-0 z-20 w-full bg-white font-Noto">
       <nav className="container flex items-center px-4 mx-auto place-content-between h-[68px]">
-        <Link href="/">
+        <Link to="/main">
           <img src={logo} className="w-[125px] ml-5" alt="" />
         </Link>
 

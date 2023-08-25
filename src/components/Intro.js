@@ -9,7 +9,7 @@ function Intro() {
   return (
     <>
       <div className="w-full bg-[#f8f9fa] font-Noto">
-        <div className="mt-[88px] container mx-auto grid grid-cols-12 pb-16">
+        <div className="mt-[68px] container mx-auto grid grid-cols-12 pb-16">
           <div className="col-span-12 text-4xl text-center fonr-bold p-[75px]">
             CEO 인사말
           </div>

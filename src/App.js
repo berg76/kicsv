@@ -31,6 +31,14 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
+    // console.log("");
+    window.addEventListener("beforeunload", () => {
+      localStorage.clear();
+      console.log("Clear");
+    });
+  }, []);
+
+  useEffect(() => {
     async function getLocation() {
       // fetch("http://ip-api.com/json/")
       // fetch(

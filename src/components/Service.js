@@ -44,7 +44,7 @@ function Service() {
           <input type="checkbox" id="drop1" className="hidden peer" />
           <label
             className="flex justify-between p-4 text-2xl border-b-2 border-gray-400 cursor-pointer"
-            for="drop1"
+            htmlFor="drop1"
           >
             <div> KIC 실리콘밸리 카본 멤버십 </div>
           </label>
@@ -173,7 +173,7 @@ function Service() {
           <input type="checkbox" id="drop2" className="hidden peer" />
           <label
             className="flex justify-between p-4 text-2xl border-b-2 border-gray-400 cursor-pointer"
-            for="drop2"
+            htmlFor="drop2"
           >
             <div> KIC 실리콘밸리 다이아몬드 멤버십 </div>
           </label>
@@ -361,7 +361,7 @@ function Service() {
           />
           <label
             className="flex justify-between p-4 text-2xl border-b-2 border-gray-400 cursor-pointer"
-            for="drop3"
+            htmlFor="drop3"
           >
             <div>KIC 실리콘밸리 얼럼나이 멤버십</div>
           </label>

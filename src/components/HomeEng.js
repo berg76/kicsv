@@ -4,6 +4,8 @@ import icon1 from "../imgs/landing_icon1.png";
 import icon2 from "../imgs/landing_icon2.png";
 import icon3 from "../imgs/landing_icon3.png";
 
+import pops from "../imgs/K-Day_Poster.png";
+
 // import landingHead from "../imgs/EnLandingHead.svg";
 // import landingSub from "../imgs/EnLandingSubHead.svg";
 // import landingImg from "../imgs/EnLandingImg.svg";
@@ -26,6 +28,19 @@ function HomeEng() {
   const [timer1, setTimer1] = useState();
   const [timer2, setTimer2] = useState();
   const [timer3, setTimer3] = useState();
+
+  const [modal, setModal] = useState(false);
+  const VISITED_BEFORE_DATE = localStorage.getItem("Visited");
+
+  useEffect(() => {
+    //console.log(VISITED_BEFORE_DATE);
+    if (VISITED_BEFORE_DATE !== null) {
+      setModal(false);
+    } else {
+      // Not Visited
+      setModal(true);
+    }
+  }, [VISITED_BEFORE_DATE]);
 
   useEffect(() => {
     const interval1 = setInterval(() => {
@@ -63,7 +78,25 @@ function HomeEng() {
   }, [num1, num2, num3]);
 
   return (
-    <div>
+    <div className="relative w-full">
+      {modal && (
+        <div className="fixed z-50 w-full h-full bg-[#e5e7ebbf]">
+          <div className="fixed top-[100px] left-[50%] -translate-x-1/2">
+            <div className="absolute right-0 w-full text-right bg-[#2E2D2D] text-white pt-3">
+              <span
+                className="px-3 pt-3 cursor-pointer"
+                onClick={() => {
+                  setModal(false);
+                  localStorage.setItem("Visited", true);
+                }}
+              >
+                X
+              </span>
+            </div>
+            <img src={pops} alt="" className="mt-[36px]" />
+          </div>
+        </div>
+      )}
       <div className="bg-[#FFDCCD] w-full mt-[68px] py-12">
         <div className="w-full relative bg-[#FFDCCD] xl:container mx-auto">
           {/* <img
