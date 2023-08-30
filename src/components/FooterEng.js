@@ -30,6 +30,7 @@ function FooterEng() {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
+          alert("Your request has been sent successfully.");
         },
         (error) => {
           console.log("FAILED...", error.text);

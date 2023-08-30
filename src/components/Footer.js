@@ -34,6 +34,7 @@ export default function Footer() {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
+          alert("문의가 전달되었습니다.");
         },
         (error) => {
           console.log("FAILED...", error.text);
