@@ -4,8 +4,8 @@ import React from "react";
 // import img3 from "../imgs/KDAY_META.png";
 // import img4 from "../imgs/KDAY_SaaS.png";
 
-// import kday1 from "../imgs/KDAY_Head.svg";
-import kday1 from "../imgs/KDAY_Head_qr.svg";
+import kday1 from "../imgs/KDAY_Head.svg";
+// import kday1 from "../imgs/KDAY_Head_qr.svg";
 // import qrcode from "../imgs/qrcode.png";
 
 import kday21 from "../imgs/KDAY_Head2.svg";

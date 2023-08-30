@@ -3,7 +3,7 @@ import bgImg1 from "../imgs/kicsv_main_bg1.jpg";
 import bgImg2 from "../imgs/kicsv_main_bg2.jpg";
 import bgImg3 from "../imgs/kicsv_main_bg3.jpg";
 
-import pops from "../imgs/K-Day_Poster.png";
+// import pops from "../imgs/K-Day_Poster.png";
 
 import React, { useState, useEffect } from "react";
 
@@ -22,22 +22,22 @@ export default function JumboHeading() {
     return () => clearInterval(interval);
   });
 
-  const [modal, setModal] = useState(false);
-  const VISITED_BEFORE_DATE = localStorage.getItem("Visited");
+  // const [modal, setModal] = useState(false);
+  // const VISITED_BEFORE_DATE = localStorage.getItem("Visited");
 
-  useEffect(() => {
-    //console.log(VISITED_BEFORE_DATE);
-    if (VISITED_BEFORE_DATE !== null) {
-      setModal(false);
-    } else {
-      // Not Visited
-      setModal(true);
-    }
-  }, [VISITED_BEFORE_DATE]);
+  // useEffect(() => {
+  //   //console.log(VISITED_BEFORE_DATE);
+  //   if (VISITED_BEFORE_DATE !== null) {
+  //     setModal(false);
+  //   } else {
+  //     // Not Visited
+  //     setModal(true);
+  //   }
+  // }, [VISITED_BEFORE_DATE]);
 
   return (
     <div className="relative w-full h-[500px] md:h-[550px] overflow-hidden text-center mt-[68px] font-Noto">
-      {modal && (
+      {/* {modal && (
         <div className="fixed z-50 w-full h-full bg-[#e5e7ebbf]">
           <div className="fixed top-[100px] left-[50%] -translate-x-1/2">
             <div className="absolute right-0 w-full text-right bg-[#2E2D2D] text-white pt-3">
@@ -54,7 +54,7 @@ export default function JumboHeading() {
             <img src={pops} alt="" className="mt-[36px]" />
           </div>
         </div>
-      )}
+      )} */}
       <div
         className={`absolute transition-opacity duration-700 ease-in w-full ${
           bgIdx === 0 ? "opacity-100" : "opacity-0"
