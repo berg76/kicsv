@@ -14,6 +14,8 @@ import kday22 from "../imgs/KDAY_Contents2.svg";
 import kday31 from "../imgs/KDAY_KEY1.svg";
 import kday32 from "../imgs/KDAY_KEY2.png";
 import kday33 from "../imgs/KDAY_KEY3.svg";
+import kday34 from "../imgs/KDAY_KEY4.png";
+import kday35 from "../imgs/KDAY_KEY5.svg";
 
 import kday41 from "../imgs/KDAY_Vertical1.svg";
 import kday42 from "../imgs/KDAY_Vertical2.svg";
@@ -95,6 +97,18 @@ function Kday() {
             </div>
             <div className="col-span-8">
               <img src={kday33} alt="" className="ml-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#F1D8D7] ">
+        <div className="mx-auto lg:container">
+          <div className="grid grid-cols-12 py-24">
+            <div className="col-span-4 place-self-center">
+              <img src={kday34} alt="" className="w-[65%] " />
+            </div>
+            <div className="col-span-8">
+              <img src={kday35} alt="" className="ml-0" />
             </div>
           </div>
         </div>

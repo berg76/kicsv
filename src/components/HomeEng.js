@@ -82,9 +82,10 @@ function HomeEng() {
       {modal && (
         <div className="fixed z-50 w-full h-full bg-[#e5e7ebbf]">
           <div className="fixed top-[100px] left-[50%] -translate-x-1/2">
-            <div className="absolute right-0 w-full text-right bg-[#2E2D2D] text-white pt-3">
+            {/* 2E2D2D */}
+            <div className="absolute right-0 w-full text-right bg-[#000000] text-white pt-1">
               <span
-                className="px-3 pt-3 cursor-pointer"
+                className="px-3 pt-1 cursor-pointer"
                 onClick={() => {
                   setModal(false);
                   localStorage.setItem("Visited", true);
@@ -93,7 +94,7 @@ function HomeEng() {
                 X
               </span>
             </div>
-            <img src={pops} alt="" className="mt-[36px]" />
+            <img src={pops} alt="" className="mt-[24px]" />
           </div>
         </div>
       )}
